@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress ALL -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入账号"/>
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入密码"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+        <CheckBox
+            android:id="@+id/cb_ischecked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="记住用户/密码"/>
+        <Button
+            android:onClick="check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="登录"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+
+
+</LinearLayout>
